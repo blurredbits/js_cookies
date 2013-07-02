@@ -5,7 +5,7 @@ function Cookie (batchType, bakeTime) {
     this.status = "raw";
 }
 
-Cookie.prototype.status(ovenTime) {
+Cookie.prototype.status = function(ovenTime){
     if (ovenTime === 0) {
         return this.status;   
     }
